@@ -96,7 +96,12 @@ public class Tienda {
        System.out.println((this.producto1.getCantidadBodega()-this.producto1.getCantidadMinima())*(this.producto1.getValorU()*(1+Producto.IVA_PAPELERIA)));
        
    }
-
+//dinero en caja 
+   private double DineroEnCajaPapeleria(){
+   
+       double dinero=this.producto1.getTotalProductosVendidos()*this.producto1.getValorU()*(1*Producto.IVA_PAPELERIA);
+       return dinero;
+   }
 
 
 }
